@@ -80,15 +80,84 @@ class KeyboardViewController: UIInputViewController {
             (textDocumentProxy as UIKeyInput).insertText("\(string!)".lowercaseString)
         }
         shiftOn = 0
+        transformLower()
+    }
+    
+    func transformLower(){
+        B.setTitle("b", forState: UIControlState.Normal)
+        É.setTitle("é", forState: UIControlState.Normal)
+        P.setTitle("p", forState: UIControlState.Normal)
+        O.setTitle("o", forState: UIControlState.Normal)
+        È.setTitle("è", forState: UIControlState.Normal)
+        V.setTitle("v", forState: UIControlState.Normal)
+        D.setTitle("d", forState: UIControlState.Normal)
+        L.setTitle("l", forState: UIControlState.Normal)
+        J.setTitle("j", forState: UIControlState.Normal)
+        Z.setTitle("z", forState: UIControlState.Normal)
+        A.setTitle("a", forState: UIControlState.Normal)
+        U.setTitle("u", forState: UIControlState.Normal)
+        I.setTitle("i", forState: UIControlState.Normal)
+        E.setTitle("e", forState: UIControlState.Normal)
+        C.setTitle("c", forState: UIControlState.Normal)
+        T.setTitle("t", forState: UIControlState.Normal)
+        S.setTitle("s", forState: UIControlState.Normal)
+        R.setTitle("r", forState: UIControlState.Normal)
+        N.setTitle("n", forState: UIControlState.Normal)
+        M.setTitle("m", forState: UIControlState.Normal)
+        Ç.setTitle("ç", forState: UIControlState.Normal)
+        Ê.setTitle("ê", forState: UIControlState.Normal)
+        À.setTitle("à", forState: UIControlState.Normal)
+        Y.setTitle("y", forState: UIControlState.Normal)
+        X.setTitle("x", forState: UIControlState.Normal)
+        K.setTitle("k", forState: UIControlState.Normal)
+        Q.setTitle("q", forState: UIControlState.Normal)
+        G.setTitle("g", forState: UIControlState.Normal)
+        H.setTitle("h", forState: UIControlState.Normal)
+        F.setTitle("f", forState: UIControlState.Normal)
+    }
+    
+    func transformUpper(){
+        B.setTitle("B", forState: UIControlState.Normal)
+        É.setTitle("É", forState: UIControlState.Normal)
+        P.setTitle("B", forState: UIControlState.Normal)
+        O.setTitle("O", forState: UIControlState.Normal)
+        È.setTitle("È", forState: UIControlState.Normal)
+        V.setTitle("V", forState: UIControlState.Normal)
+        D.setTitle("D", forState: UIControlState.Normal)
+        L.setTitle("L", forState: UIControlState.Normal)
+        J.setTitle("J", forState: UIControlState.Normal)
+        Z.setTitle("Z", forState: UIControlState.Normal)
+        A.setTitle("A", forState: UIControlState.Normal)
+        U.setTitle("U", forState: UIControlState.Normal)
+        I.setTitle("I", forState: UIControlState.Normal)
+        E.setTitle("E", forState: UIControlState.Normal)
+        C.setTitle("C", forState: UIControlState.Normal)
+        T.setTitle("T", forState: UIControlState.Normal)
+        S.setTitle("S", forState: UIControlState.Normal)
+        R.setTitle("R", forState: UIControlState.Normal)
+        N.setTitle("N", forState: UIControlState.Normal)
+        M.setTitle("M", forState: UIControlState.Normal)
+        Ç.setTitle("Ç", forState: UIControlState.Normal)
+        Ê.setTitle("Ê", forState: UIControlState.Normal)
+        À.setTitle("À", forState: UIControlState.Normal)
+        Y.setTitle("Y", forState: UIControlState.Normal)
+        X.setTitle("X", forState: UIControlState.Normal)
+        K.setTitle("K", forState: UIControlState.Normal)
+        Q.setTitle("Q", forState: UIControlState.Normal)
+        G.setTitle("G", forState: UIControlState.Normal)
+        H.setTitle("H", forState: UIControlState.Normal)
+        F.setTitle("F", forState: UIControlState.Normal)
     }
     
     @IBAction func shiftPressed(button : UIButton)
     {
         if (shiftOn == 0){
             shiftOn = 1
+            transformUpper()
         }
         else{
             shiftOn = 0
+            transformLower()
         }
         
     }

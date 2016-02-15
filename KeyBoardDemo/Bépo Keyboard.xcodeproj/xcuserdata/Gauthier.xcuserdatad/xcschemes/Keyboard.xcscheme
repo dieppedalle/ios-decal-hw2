@@ -18,7 +18,7 @@
                BlueprintIdentifier = "36B63DA81C705D5500760DF2"
                BuildableName = "Keyboard.appex"
                BlueprintName = "Keyboard"
-               ReferencedContainer = "container:KeyBoardDemo.xcodeproj">
+               ReferencedContainer = "container:Be&#x301;po Keyboard.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -30,9 +30,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "36B63D731C705BCA00760DF2"
-               BuildableName = "KeyBoardDemo.app"
-               BlueprintName = "KeyBoardDemo"
-               ReferencedContainer = "container:KeyBoardDemo.xcodeproj">
+               BuildableName = "Be&#x301;po Keyboard.app"
+               BlueprintName = "Be&#x301;po Keyboard"
+               ReferencedContainer = "container:Be&#x301;po Keyboard.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -50,7 +50,7 @@
             BlueprintIdentifier = "36B63DA81C705D5500760DF2"
             BuildableName = "Keyboard.appex"
             BlueprintName = "Keyboard"
-            ReferencedContainer = "container:KeyBoardDemo.xcodeproj">
+            ReferencedContainer = "container:Be&#x301;po Keyboard.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -67,16 +67,20 @@
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES"
       launchAutomaticallySubstyle = "2">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <RemoteRunnable
+         runnableDebuggingMode = "0"
+         BundleIdentifier = "Dieppedalle.KeyBoardDemo"
+         RemotePath = "/var/mobile/Containers/Bundle/Application/3447AF20-CD26-4501-B30F-B336C97612CF/KeyBoardDemo.app">
+      </RemoteRunnable>
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "36B63D731C705BCA00760DF2"
-            BuildableName = "KeyBoardDemo.app"
-            BlueprintName = "KeyBoardDemo"
-            ReferencedContainer = "container:KeyBoardDemo.xcodeproj">
+            BuildableName = "Be&#x301;po Keyboard.app"
+            BlueprintName = "Be&#x301;po Keyboard"
+            ReferencedContainer = "container:Be&#x301;po Keyboard.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -92,9 +96,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "36B63D731C705BCA00760DF2"
-            BuildableName = "KeyBoardDemo.app"
-            BlueprintName = "KeyBoardDemo"
-            ReferencedContainer = "container:KeyBoardDemo.xcodeproj">
+            BuildableName = "Be&#x301;po Keyboard.app"
+            BlueprintName = "Be&#x301;po Keyboard"
+            ReferencedContainer = "container:Be&#x301;po Keyboard.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "36B63D731C705BCA00760DF2"
-               BuildableName = "KeyBoardDemo.app"
-               BlueprintName = "KeyBoardDemo"
-               ReferencedContainer = "container:KeyBoardDemo.xcodeproj">
+               BuildableName = "Be&#x301;po Keyboard.app"
+               BlueprintName = "Be&#x301;po Keyboard"
+               ReferencedContainer = "container:Be&#x301;po Keyboard.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "36B63D871C705BCA00760DF2"
-               BuildableName = "KeyBoardDemoTests.xctest"
-               BlueprintName = "KeyBoardDemoTests"
-               ReferencedContainer = "container:KeyBoardDemo.xcodeproj">
+               BuildableName = "Be&#x301;po Keyboard.xctest"
+               BlueprintName = "Be&#x301;po KeyboardTests"
+               ReferencedContainer = "container:Be&#x301;po Keyboard.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "36B63D921C705BCA00760DF2"
-               BuildableName = "KeyBoardDemoUITests.xctest"
-               BlueprintName = "KeyBoardDemoUITests"
-               ReferencedContainer = "container:KeyBoardDemo.xcodeproj">
+               BuildableName = "Be&#x301;po Keyboard.xctest"
+               BlueprintName = "Be&#x301;po KeyboardUITests"
+               ReferencedContainer = "container:Be&#x301;po Keyboard.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "36B63D731C705BCA00760DF2"
-            BuildableName = "KeyBoardDemo.app"
-            BlueprintName = "KeyBoardDemo"
-            ReferencedContainer = "container:KeyBoardDemo.xcodeproj">
+            BuildableName = "Be&#x301;po Keyboard.app"
+            BlueprintName = "Be&#x301;po Keyboard"
+            ReferencedContainer = "container:Be&#x301;po Keyboard.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "36B63D731C705BCA00760DF2"
-            BuildableName = "KeyBoardDemo.app"
-            BlueprintName = "KeyBoardDemo"
-            ReferencedContainer = "container:KeyBoardDemo.xcodeproj">
+            BuildableName = "Be&#x301;po Keyboard.app"
+            BlueprintName = "Be&#x301;po Keyboard"
+            ReferencedContainer = "container:Be&#x301;po Keyboard.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "36B63D731C705BCA00760DF2"
-            BuildableName = "KeyBoardDemo.app"
-            BlueprintName = "KeyBoardDemo"
-            ReferencedContainer = "container:KeyBoardDemo.xcodeproj">
+            BuildableName = "Be&#x301;po Keyboard.app"
+            BlueprintName = "Be&#x301;po Keyboard"
+            ReferencedContainer = "container:Be&#x301;po Keyboard.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
