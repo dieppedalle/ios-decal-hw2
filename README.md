@@ -1,5 +1,7 @@
 # Homework 2: Custom Keyboard
 
+#Please Look at the KeyboardDemo Folder
+
 ## Due
 Tuesday, February 16 at 11:59 PM
 
