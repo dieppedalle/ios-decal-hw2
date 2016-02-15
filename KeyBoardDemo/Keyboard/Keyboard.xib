@@ -37,6 +37,7 @@
                 <outlet property="X" destination="rYt-UP-go2" id="Cqb-f1-HHe"/>
                 <outlet property="Y" destination="w7o-x3-i7q" id="AQE-3V-NdP"/>
                 <outlet property="Z" destination="qTJ-fO-Wpy" id="ylL-OC-lIO"/>
+                <outlet property="mode" destination="9N7-xf-Xhs" id="ujv-Nw-0dD"/>
                 <outlet property="nextKeyboardButton" destination="EnZ-Aa-q58" id="wud-Bf-d69"/>
                 <outlet property="shift" destination="lxw-uV-ZQm" id="hfM-xe-dtD"/>
             </connections>
@@ -52,6 +53,9 @@
                     <state key="normal" title="123">
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
+                    <connections>
+                        <action selector="changeKeysPressed:" destination="-1" eventType="touchUpInside" id="nyG-0I-Wes"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="POs-KX-g1h">
                     <rect key="frame" x="36" y="8" width="30" height="47"/>
@@ -399,6 +403,26 @@
                     </state>
                     <connections>
                         <action selector="backSpacePressed:" destination="-1" eventType="touchDown" id="JLQ-M4-EZh"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zso-AY-d07">
+                    <rect key="frame" x="101" y="168" width="30" height="47"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <state key="normal" title=",">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="numberPressed:" destination="-1" eventType="touchUpInside" id="baV-YF-oeW"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nDt-QZ-jzx">
+                    <rect key="frame" x="245" y="168" width="30" height="47"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <state key="normal" title=".">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="numberPressed:" destination="-1" eventType="touchUpInside" id="D0p-r5-ht0"/>
                     </connections>
                 </button>
             </subviews>

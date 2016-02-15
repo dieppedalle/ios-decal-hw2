@@ -42,9 +42,11 @@ class KeyboardViewController: UIInputViewController {
     @IBOutlet var H: UIButton!
     @IBOutlet var F: UIButton!
     @IBOutlet var shift: UIButton!
+    @IBOutlet var mode: UIButton!
     
     var keyboardView: UIView!
     var shiftOn = 0
+    var numbersOn = 0
     
     override func updateViewConstraints() {
         super.updateViewConstraints()
@@ -73,14 +75,20 @@ class KeyboardViewController: UIInputViewController {
     @IBAction func buttonPressed(button : UIButton)
     {
         var string = button.titleLabel?.text
-        if (shiftOn==1){
+        if (numbersOn == 1){
+            (textDocumentProxy as UIKeyInput).insertText("\(string!)")
+            transformChar()
+        }
+        else if (shiftOn==1){
             (textDocumentProxy as UIKeyInput).insertText("\(string!)".uppercaseString)
+            transformLower()
         }
         else{
             (textDocumentProxy as UIKeyInput).insertText("\(string!)".lowercaseString)
+            transformLower()
         }
         shiftOn = 0
-        transformLower()
+        
     }
     
     func transformLower(){
@@ -114,12 +122,13 @@ class KeyboardViewController: UIInputViewController {
         G.setTitle("g", forState: UIControlState.Normal)
         H.setTitle("h", forState: UIControlState.Normal)
         F.setTitle("f", forState: UIControlState.Normal)
+        mode.setTitle("123", forState: UIControlState.Normal)
     }
     
     func transformUpper(){
         B.setTitle("B", forState: UIControlState.Normal)
         É.setTitle("É", forState: UIControlState.Normal)
-        P.setTitle("B", forState: UIControlState.Normal)
+        P.setTitle("P", forState: UIControlState.Normal)
         O.setTitle("O", forState: UIControlState.Normal)
         È.setTitle("È", forState: UIControlState.Normal)
         V.setTitle("V", forState: UIControlState.Normal)
@@ -147,6 +156,41 @@ class KeyboardViewController: UIInputViewController {
         G.setTitle("G", forState: UIControlState.Normal)
         H.setTitle("H", forState: UIControlState.Normal)
         F.setTitle("F", forState: UIControlState.Normal)
+        mode.setTitle("123", forState: UIControlState.Normal)
+    }
+    
+    func transformChar(){
+        B.setTitle("1", forState: UIControlState.Normal)
+        É.setTitle("2", forState: UIControlState.Normal)
+        P.setTitle("3", forState: UIControlState.Normal)
+        O.setTitle("4", forState: UIControlState.Normal)
+        È.setTitle("5", forState: UIControlState.Normal)
+        V.setTitle("6", forState: UIControlState.Normal)
+        D.setTitle("7", forState: UIControlState.Normal)
+        L.setTitle("8", forState: UIControlState.Normal)
+        J.setTitle("9", forState: UIControlState.Normal)
+        Z.setTitle("0", forState: UIControlState.Normal)
+        A.setTitle("-", forState: UIControlState.Normal)
+        U.setTitle("/", forState: UIControlState.Normal)
+        I.setTitle(":", forState: UIControlState.Normal)
+        E.setTitle(";", forState: UIControlState.Normal)
+        C.setTitle("(", forState: UIControlState.Normal)
+        T.setTitle(")", forState: UIControlState.Normal)
+        S.setTitle("$", forState: UIControlState.Normal)
+        R.setTitle("&", forState: UIControlState.Normal)
+        N.setTitle("@", forState: UIControlState.Normal)
+        M.setTitle("\"", forState: UIControlState.Normal)
+        Ç.setTitle("?", forState: UIControlState.Normal)
+        Ê.setTitle("!", forState: UIControlState.Normal)
+        À.setTitle("\'", forState: UIControlState.Normal)
+        Y.setTitle("+", forState: UIControlState.Normal)
+        X.setTitle("=", forState: UIControlState.Normal)
+        K.setTitle("*", forState: UIControlState.Normal)
+        Q.setTitle("^", forState: UIControlState.Normal)
+        G.setTitle("%", forState: UIControlState.Normal)
+        H.setTitle("#", forState: UIControlState.Normal)
+        F.setTitle("|", forState: UIControlState.Normal)
+        mode.setTitle("abc", forState: UIControlState.Normal)
     }
     
     @IBAction func shiftPressed(button : UIButton)
@@ -179,13 +223,31 @@ class KeyboardViewController: UIInputViewController {
     
     @IBAction func numberPressed(button : UIButton)
     {
-        var string = button.titleLabel?.text
+        let string = button.titleLabel?.text
         (textDocumentProxy as UIKeyInput).insertText("\(string!)")
+    }
+    
+    @IBAction func changeKeysPressed(button : UIButton)
+    {
+        if (numbersOn == 0){
+            transformChar()
+            numbersOn = 1
+        }
+        else{
+            if (shiftOn == 1){
+                transformUpper()
+            }
+            else{
+                shiftOn = 0
+            }
+            transformLower()
+            numbersOn = 0
+        }
     }
     
     
     func loadKeyboard(){
-        var keyboardNib = UINib(nibName: "Keyboard", bundle: nil)
+        let keyboardNib = UINib(nibName: "Keyboard", bundle: nil)
         keyboardView = keyboardNib.instantiateWithOwner(self, options: nil)[0] as! UIView
         view.addSubview(keyboardView)
         keyboardView.frame = view.frame
