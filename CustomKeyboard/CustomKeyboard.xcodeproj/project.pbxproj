@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A55544A1BA930D800AF502F /* Keyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A5554491BA930D800AF502F /* Keyboard.xib */; settings = {ASSET_TAGS = (); }; };
+		3A55544A1BA930D800AF502F /* Keyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A5554491BA930D800AF502F /* Keyboard.xib */; };
 		3AAA639A1BA9263900E3822E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAA63991BA9263900E3822E /* AppDelegate.swift */; };
 		3AAA639C1BA9263900E3822E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAA639B1BA9263900E3822E /* ViewController.swift */; };
 		3AAA639F1BA9263900E3822E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AAA639D1BA9263900E3822E /* Main.storyboard */; };
@@ -164,9 +164,11 @@
 				TargetAttributes = {
 					3AAA63951BA9263900E3822E = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 67QJZLANJR;
 					};
 					3AAA63AF1BA9283500E3822E = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 67QJZLANJR;
 					};
 				};
 			};
@@ -343,11 +345,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = CustomKeyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "cs198-1.CustomKeyboard";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gdieppedalle.CustomKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -355,21 +360,27 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = CustomKeyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "cs198-1.CustomKeyboard";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gdieppedalle.CustomKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
 		3AAA63B91BA9283500E3822E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = CalKeyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cs198-1.CustomKeyboard.CalKeyboard";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -377,10 +388,13 @@
 		3AAA63BA1BA9283500E3822E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = CalKeyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cs198-1.CustomKeyboard.CalKeyboard";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
