@@ -40,6 +40,7 @@ class KeyboardViewController: UIInputViewController {
     @IBOutlet var Q: UIButton!
     @IBOutlet var G: UIButton!
     @IBOutlet var H: UIButton!
+    @IBOutlet var W: UIButton!
     @IBOutlet var F: UIButton!
     @IBOutlet var shift: UIButton!
     @IBOutlet var mode: UIButton!
@@ -122,6 +123,7 @@ class KeyboardViewController: UIInputViewController {
         G.setTitle("g", forState: UIControlState.Normal)
         H.setTitle("h", forState: UIControlState.Normal)
         F.setTitle("f", forState: UIControlState.Normal)
+        W.setTitle("w", forState: UIControlState.Normal)
         mode.setTitle("123", forState: UIControlState.Normal)
     }
     
@@ -156,6 +158,7 @@ class KeyboardViewController: UIInputViewController {
         G.setTitle("G", forState: UIControlState.Normal)
         H.setTitle("H", forState: UIControlState.Normal)
         F.setTitle("F", forState: UIControlState.Normal)
+        W.setTitle("W", forState: UIControlState.Normal)
         mode.setTitle("123", forState: UIControlState.Normal)
     }
     
@@ -190,6 +193,7 @@ class KeyboardViewController: UIInputViewController {
         G.setTitle("%", forState: UIControlState.Normal)
         H.setTitle("#", forState: UIControlState.Normal)
         F.setTitle("|", forState: UIControlState.Normal)
+        W.setTitle("€", forState: UIControlState.Normal)
         mode.setTitle("abc", forState: UIControlState.Normal)
     }
     
@@ -203,6 +207,8 @@ class KeyboardViewController: UIInputViewController {
             shiftOn = 0
             transformLower()
         }
+        
+        
         
     }
     
@@ -227,6 +233,15 @@ class KeyboardViewController: UIInputViewController {
         (textDocumentProxy as UIKeyInput).insertText("\(string!)")
     }
     
+    @IBAction func dotPressed(button : UIButton)
+    {
+        let string = button.titleLabel?.text
+        (textDocumentProxy as UIKeyInput).insertText("\(string!)")
+        
+        shiftOn = 1
+        transformUpper()
+    }
+    
     @IBAction func changeKeysPressed(button : UIButton)
     {
         if (numbersOn == 0){
@@ -238,9 +253,10 @@ class KeyboardViewController: UIInputViewController {
                 transformUpper()
             }
             else{
+                transformLower()
                 shiftOn = 0
             }
-            transformLower()
+            
             numbersOn = 0
         }
     }

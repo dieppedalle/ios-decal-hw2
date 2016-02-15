@@ -20,6 +20,9 @@
 		36B63DBA1C71A7F100760DF2 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 36B63DB91C71A7F100760DF2 /* arrow.png */; };
 		36B63DBC1C71A80F00760DF2 /* arrowBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 36B63DBB1C71A80F00760DF2 /* arrowBack.png */; };
 		36B63DBE1C71A95000760DF2 /* geography-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 36B63DBD1C71A95000760DF2 /* geography-512.png */; };
+		36FC64721C724CF800096B4C /* arrow-200-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 36FC64711C724CF800096B4C /* arrow-200-512.png */; };
+		36FC64741C724D2800096B4C /* arrow-200-512 copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 36FC64731C724D2800096B4C /* arrow-200-512 copy.png */; };
+		36FC64761C724DAE00096B4C /* white-globe-hi.png in Resources */ = {isa = PBXBuildFile; fileRef = 36FC64751C724DAE00096B4C /* white-globe-hi.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +84,9 @@
 		36B63DB91C71A7F100760DF2 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = SOURCE_ROOT; };
 		36B63DBB1C71A80F00760DF2 /* arrowBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrowBack.png; sourceTree = SOURCE_ROOT; };
 		36B63DBD1C71A95000760DF2 /* geography-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "geography-512.png"; sourceTree = SOURCE_ROOT; };
+		36FC64711C724CF800096B4C /* arrow-200-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-200-512.png"; sourceTree = SOURCE_ROOT; };
+		36FC64731C724D2800096B4C /* arrow-200-512 copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-200-512 copy.png"; sourceTree = SOURCE_ROOT; };
+		36FC64751C724DAE00096B4C /* white-globe-hi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-globe-hi.png"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,7 +181,10 @@
 				36B63DAB1C705D5500760DF2 /* KeyboardViewController.swift */,
 				36B63DB91C71A7F100760DF2 /* arrow.png */,
 				36B63DBB1C71A80F00760DF2 /* arrowBack.png */,
+				36FC64731C724D2800096B4C /* arrow-200-512 copy.png */,
 				36B63DAD1C705D5500760DF2 /* Info.plist */,
+				36FC64711C724CF800096B4C /* arrow-200-512.png */,
+				36FC64751C724DAE00096B4C /* white-globe-hi.png */,
 				36B63DB51C705E2D00760DF2 /* Keyboard.xib */,
 			);
 			path = Keyboard;
@@ -337,8 +346,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				36B63DBC1C71A80F00760DF2 /* arrowBack.png in Resources */,
+				36FC64761C724DAE00096B4C /* white-globe-hi.png in Resources */,
 				36B63DBA1C71A7F100760DF2 /* arrow.png in Resources */,
 				36B63DB61C705E2D00760DF2 /* Keyboard.xib in Resources */,
+				36FC64741C724D2800096B4C /* arrow-200-512 copy.png in Resources */,
+				36FC64721C724CF800096B4C /* arrow-200-512.png in Resources */,
 				36B63DBE1C71A95000760DF2 /* geography-512.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

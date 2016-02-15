@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -14,85 +15,62 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to the" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fEm-zU-I2k">
-                                <rect key="frame" x="124" y="20" width="126" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bépo Keyboard!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D4b-to-bi1">
-                                <rect key="frame" x="124" y="49" width="126" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tdw-7U-2mL">
-                                <rect key="frame" x="20" y="106" width="335" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tdw-7U-2mL">
+                                <rect key="frame" x="20" y="106" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Setup Tutorial:" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Iih-5R-dqD">
-                                <rect key="frame" x="20" y="144" width="335" height="31"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Welcome to the Bépo Keyboard!" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LXA-qC-WT0">
+                                <rect key="frame" x="228" y="20" width="145" height="59"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="bSa-hs-G8e"/>
+                                    <constraint firstAttribute="width" constant="145" id="w9l-eQ-2JF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Setup Tutorial:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7EV-1g-B6X">
+                                <rect key="frame" x="20" y="154" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Go to Settings-&gt; General -&gt; KeyBoard -&gt; Keyboards -&gt; Add New KeyBoard -&gt; Done " textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UAu-gy-l9f">
+                                <rect key="frame" x="20" y="183" width="560" height="49"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="CaX-2d-hzC"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Go to Settings-&gt; General -&gt; KeyBoard -&gt; Keyboards -&gt; Add New KeyBoard -&gt; Done" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UAu-gy-l9f">
-                                <rect key="frame" x="20" y="183" width="335" height="49"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Created by Gauthier Dieppedalle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XXu-e5-p5D">
-                                <rect key="frame" x="20" y="638" width="335" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Version" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1xO-jz-Jvp">
-                                <rect key="frame" x="20" y="323" width="335" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CuJ-Fu-Kxf">
-                                <rect key="frame" x="20" y="345" width="335" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BlackDot" translatesAutoresizingMaskIntoConstraints="NO" id="fXU-ce-g0T">
-                                <rect key="frame" x="-144" y="408" width="269" height="269"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BlackDot" translatesAutoresizingMaskIntoConstraints="NO" id="cEX-Mp-Se5">
-                                <rect key="frame" x="145" y="368" width="269" height="269"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BlackDot" translatesAutoresizingMaskIntoConstraints="NO" id="dL6-Rg-fEr">
-                                <rect key="frame" x="-17" y="221" width="168" height="168"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BlackDot" translatesAutoresizingMaskIntoConstraints="NO" id="isr-XW-c7b">
-                                <rect key="frame" x="284" y="237" width="135" height="135"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BlackDot" translatesAutoresizingMaskIntoConstraints="NO" id="bNs-m4-23x">
-                                <rect key="frame" x="322" y="0.0" width="135" height="135"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BlackDot" translatesAutoresizingMaskIntoConstraints="NO" id="zSE-wp-NOB">
-                                <rect key="frame" x="-61" y="-8" width="135" height="135"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UAu-gy-l9f" firstAttribute="leading" secondItem="7EV-1g-B6X" secondAttribute="leading" id="0l0-SC-XeC"/>
+                            <constraint firstItem="7EV-1g-B6X" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="134" id="1Ll-UE-6Im"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="tdw-7U-2mL" secondAttribute="leading" id="1Z4-rR-Q8u"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UAu-gy-l9f" secondAttribute="trailing" id="3oN-nF-Rqq"/>
+                            <constraint firstItem="LXA-qC-WT0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4kV-es-x1f"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7EV-1g-B6X" secondAttribute="trailing" id="Ay5-Xj-Kut"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tdw-7U-2mL" secondAttribute="trailing" id="PPK-6f-ZIf"/>
+                            <constraint firstItem="tdw-7U-2mL" firstAttribute="top" secondItem="LXA-qC-WT0" secondAttribute="bottom" constant="27" id="PmM-IT-1Ib"/>
+                            <constraint firstItem="UAu-gy-l9f" firstAttribute="top" secondItem="7EV-1g-B6X" secondAttribute="bottom" constant="8" id="QsG-9D-VYj"/>
+                            <constraint firstItem="7EV-1g-B6X" firstAttribute="top" secondItem="tdw-7U-2mL" secondAttribute="bottom" constant="18" id="fUe-d1-O4q"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="7EV-1g-B6X" secondAttribute="leading" id="hDj-Uz-w6S"/>
+                            <constraint firstItem="tdw-7U-2mL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="86" id="hf4-Hs-6PB"/>
+                            <constraint firstItem="LXA-qC-WT0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="hxD-Ss-nZ0"/>
+                            <constraint firstItem="UAu-gy-l9f" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="163" id="mDt-Mh-U9o"/>
+                        </constraints>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="264.5" y="276.5"/>
+            <point key="canvasLocation" x="288" y="240"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="BlackDot" width="2000" height="2000"/>
-    </resources>
 </document>
