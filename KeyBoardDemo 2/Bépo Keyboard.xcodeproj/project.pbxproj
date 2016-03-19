@@ -1,0 +1,662 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		36B63D781C705BCA00760DF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B63D771C705BCA00760DF2 /* AppDelegate.swift */; };
+		36B63D7A1C705BCA00760DF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B63D791C705BCA00760DF2 /* ViewController.swift */; };
+		36B63D7D1C705BCA00760DF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36B63D7B1C705BCA00760DF2 /* Main.storyboard */; };
+		36B63D7F1C705BCA00760DF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36B63D7E1C705BCA00760DF2 /* Assets.xcassets */; };
+		36B63D821C705BCA00760DF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36B63D801C705BCA00760DF2 /* LaunchScreen.storyboard */; };
+		36B63D8D1C705BCA00760DF2 /* KeyBoardDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B63D8C1C705BCA00760DF2 /* KeyBoardDemoTests.swift */; };
+		36B63D981C705BCA00760DF2 /* KeyBoardDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B63D971C705BCA00760DF2 /* KeyBoardDemoUITests.swift */; };
+		36B63DAC1C705D5500760DF2 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B63DAB1C705D5500760DF2 /* KeyboardViewController.swift */; };
+		36B63DB01C705D5500760DF2 /* Keyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 36B63DA91C705D5500760DF2 /* Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		36B63DB61C705E2D00760DF2 /* Keyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36B63DB51C705E2D00760DF2 /* Keyboard.xib */; };
+		36B63DBA1C71A7F100760DF2 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 36B63DB91C71A7F100760DF2 /* arrow.png */; };
+		36B63DBC1C71A80F00760DF2 /* arrowBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 36B63DBB1C71A80F00760DF2 /* arrowBack.png */; };
+		36B63DBE1C71A95000760DF2 /* geography-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 36B63DBD1C71A95000760DF2 /* geography-512.png */; };
+		36FC64721C724CF800096B4C /* arrow-200-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 36FC64711C724CF800096B4C /* arrow-200-512.png */; };
+		36FC64741C724D2800096B4C /* arrow-200-512 copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 36FC64731C724D2800096B4C /* arrow-200-512 copy.png */; };
+		36FC64761C724DAE00096B4C /* white-globe-hi.png in Resources */ = {isa = PBXBuildFile; fileRef = 36FC64751C724DAE00096B4C /* white-globe-hi.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		36B63D891C705BCA00760DF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36B63D6C1C705BCA00760DF2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36B63D731C705BCA00760DF2;
+			remoteInfo = KeyBoardDemo;
+		};
+		36B63D941C705BCA00760DF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36B63D6C1C705BCA00760DF2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36B63D731C705BCA00760DF2;
+			remoteInfo = KeyBoardDemo;
+		};
+		36B63DAE1C705D5500760DF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36B63D6C1C705BCA00760DF2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36B63DA81C705D5500760DF2;
+			remoteInfo = Keyboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		36B63DB41C705D5500760DF2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				36B63DB01C705D5500760DF2 /* Keyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		36B63D741C705BCA00760DF2 /* Bépo Keyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bépo Keyboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		36B63D771C705BCA00760DF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		36B63D791C705BCA00760DF2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		36B63D7C1C705BCA00760DF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		36B63D7E1C705BCA00760DF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		36B63D811C705BCA00760DF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		36B63D831C705BCA00760DF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36B63D881C705BCA00760DF2 /* Bépo Keyboard.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bépo Keyboard.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		36B63D8C1C705BCA00760DF2 /* KeyBoardDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyBoardDemoTests.swift; sourceTree = "<group>"; };
+		36B63D8E1C705BCA00760DF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36B63D931C705BCA00760DF2 /* Bépo Keyboard.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bépo Keyboard.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		36B63D971C705BCA00760DF2 /* KeyBoardDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyBoardDemoUITests.swift; sourceTree = "<group>"; };
+		36B63D991C705BCA00760DF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36B63DA91C705D5500760DF2 /* Keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Keyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		36B63DAB1C705D5500760DF2 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		36B63DAD1C705D5500760DF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36B63DB51C705E2D00760DF2 /* Keyboard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Keyboard.xib; sourceTree = "<group>"; };
+		36B63DB91C71A7F100760DF2 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = SOURCE_ROOT; };
+		36B63DBB1C71A80F00760DF2 /* arrowBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrowBack.png; sourceTree = SOURCE_ROOT; };
+		36B63DBD1C71A95000760DF2 /* geography-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "geography-512.png"; sourceTree = SOURCE_ROOT; };
+		36FC64711C724CF800096B4C /* arrow-200-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-200-512.png"; sourceTree = SOURCE_ROOT; };
+		36FC64731C724D2800096B4C /* arrow-200-512 copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-200-512 copy.png"; sourceTree = SOURCE_ROOT; };
+		36FC64751C724DAE00096B4C /* white-globe-hi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-globe-hi.png"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		36B63D711C705BCA00760DF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36B63D851C705BCA00760DF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36B63D901C705BCA00760DF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36B63DA61C705D5500760DF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		36B63D6B1C705BCA00760DF2 = {
+			isa = PBXGroup;
+			children = (
+				36B63D761C705BCA00760DF2 /* KeyBoardDemo */,
+				36B63D8B1C705BCA00760DF2 /* KeyBoardDemoTests */,
+				36B63D961C705BCA00760DF2 /* KeyBoardDemoUITests */,
+				36B63DAA1C705D5500760DF2 /* Keyboard */,
+				36B63D751C705BCA00760DF2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		36B63D751C705BCA00760DF2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				36B63D741C705BCA00760DF2 /* Bépo Keyboard.app */,
+				36B63D881C705BCA00760DF2 /* Bépo Keyboard.xctest */,
+				36B63D931C705BCA00760DF2 /* Bépo Keyboard.xctest */,
+				36B63DA91C705D5500760DF2 /* Keyboard.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		36B63D761C705BCA00760DF2 /* KeyBoardDemo */ = {
+			isa = PBXGroup;
+			children = (
+				36B63D771C705BCA00760DF2 /* AppDelegate.swift */,
+				36B63D7E1C705BCA00760DF2 /* Assets.xcassets */,
+				36B63D791C705BCA00760DF2 /* ViewController.swift */,
+				36B63D7B1C705BCA00760DF2 /* Main.storyboard */,
+				36B63D801C705BCA00760DF2 /* LaunchScreen.storyboard */,
+				36B63D831C705BCA00760DF2 /* Info.plist */,
+			);
+			path = KeyBoardDemo;
+			sourceTree = "<group>";
+		};
+		36B63D8B1C705BCA00760DF2 /* KeyBoardDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				36B63D8C1C705BCA00760DF2 /* KeyBoardDemoTests.swift */,
+				36B63D8E1C705BCA00760DF2 /* Info.plist */,
+			);
+			path = KeyBoardDemoTests;
+			sourceTree = "<group>";
+		};
+		36B63D961C705BCA00760DF2 /* KeyBoardDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				36B63D971C705BCA00760DF2 /* KeyBoardDemoUITests.swift */,
+				36B63D991C705BCA00760DF2 /* Info.plist */,
+			);
+			path = KeyBoardDemoUITests;
+			sourceTree = "<group>";
+		};
+		36B63DAA1C705D5500760DF2 /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				36B63DBD1C71A95000760DF2 /* geography-512.png */,
+				36B63DAB1C705D5500760DF2 /* KeyboardViewController.swift */,
+				36B63DB91C71A7F100760DF2 /* arrow.png */,
+				36B63DBB1C71A80F00760DF2 /* arrowBack.png */,
+				36FC64731C724D2800096B4C /* arrow-200-512 copy.png */,
+				36B63DAD1C705D5500760DF2 /* Info.plist */,
+				36FC64711C724CF800096B4C /* arrow-200-512.png */,
+				36FC64751C724DAE00096B4C /* white-globe-hi.png */,
+				36B63DB51C705E2D00760DF2 /* Keyboard.xib */,
+			);
+			path = Keyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		36B63D731C705BCA00760DF2 /* Bépo Keyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36B63D9C1C705BCA00760DF2 /* Build configuration list for PBXNativeTarget "Bépo Keyboard" */;
+			buildPhases = (
+				36B63D701C705BCA00760DF2 /* Sources */,
+				36B63D711C705BCA00760DF2 /* Frameworks */,
+				36B63D721C705BCA00760DF2 /* Resources */,
+				36B63DB41C705D5500760DF2 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				36B63DAF1C705D5500760DF2 /* PBXTargetDependency */,
+			);
+			name = "Bépo Keyboard";
+			productName = KeyBoardDemo;
+			productReference = 36B63D741C705BCA00760DF2 /* Bépo Keyboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		36B63D871C705BCA00760DF2 /* Bépo KeyboardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36B63D9F1C705BCA00760DF2 /* Build configuration list for PBXNativeTarget "Bépo KeyboardTests" */;
+			buildPhases = (
+				36B63D841C705BCA00760DF2 /* Sources */,
+				36B63D851C705BCA00760DF2 /* Frameworks */,
+				36B63D861C705BCA00760DF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				36B63D8A1C705BCA00760DF2 /* PBXTargetDependency */,
+			);
+			name = "Bépo KeyboardTests";
+			productName = KeyBoardDemoTests;
+			productReference = 36B63D881C705BCA00760DF2 /* Bépo Keyboard.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		36B63D921C705BCA00760DF2 /* Bépo KeyboardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36B63DA21C705BCA00760DF2 /* Build configuration list for PBXNativeTarget "Bépo KeyboardUITests" */;
+			buildPhases = (
+				36B63D8F1C705BCA00760DF2 /* Sources */,
+				36B63D901C705BCA00760DF2 /* Frameworks */,
+				36B63D911C705BCA00760DF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				36B63D951C705BCA00760DF2 /* PBXTargetDependency */,
+			);
+			name = "Bépo KeyboardUITests";
+			productName = KeyBoardDemoUITests;
+			productReference = 36B63D931C705BCA00760DF2 /* Bépo Keyboard.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		36B63DA81C705D5500760DF2 /* Keyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36B63DB11C705D5500760DF2 /* Build configuration list for PBXNativeTarget "Keyboard" */;
+			buildPhases = (
+				36B63DA51C705D5500760DF2 /* Sources */,
+				36B63DA61C705D5500760DF2 /* Frameworks */,
+				36B63DA71C705D5500760DF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Keyboard;
+			productName = Keyboard;
+			productReference = 36B63DA91C705D5500760DF2 /* Keyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		36B63D6C1C705BCA00760DF2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Gauthier Dieppedalle";
+				TargetAttributes = {
+					36B63D731C705BCA00760DF2 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 67QJZLANJR;
+					};
+					36B63D871C705BCA00760DF2 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 67QJZLANJR;
+						TestTargetID = 36B63D731C705BCA00760DF2;
+					};
+					36B63D921C705BCA00760DF2 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 67QJZLANJR;
+						TestTargetID = 36B63D731C705BCA00760DF2;
+					};
+					36B63DA81C705D5500760DF2 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 67QJZLANJR;
+					};
+				};
+			};
+			buildConfigurationList = 36B63D6F1C705BCA00760DF2 /* Build configuration list for PBXProject "Bépo Keyboard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 36B63D6B1C705BCA00760DF2;
+			productRefGroup = 36B63D751C705BCA00760DF2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				36B63D731C705BCA00760DF2 /* Bépo Keyboard */,
+				36B63D871C705BCA00760DF2 /* Bépo KeyboardTests */,
+				36B63D921C705BCA00760DF2 /* Bépo KeyboardUITests */,
+				36B63DA81C705D5500760DF2 /* Keyboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		36B63D721C705BCA00760DF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36B63D821C705BCA00760DF2 /* LaunchScreen.storyboard in Resources */,
+				36B63D7F1C705BCA00760DF2 /* Assets.xcassets in Resources */,
+				36B63D7D1C705BCA00760DF2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36B63D861C705BCA00760DF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36B63D911C705BCA00760DF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36B63DA71C705D5500760DF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36B63DBC1C71A80F00760DF2 /* arrowBack.png in Resources */,
+				36FC64761C724DAE00096B4C /* white-globe-hi.png in Resources */,
+				36B63DBA1C71A7F100760DF2 /* arrow.png in Resources */,
+				36B63DB61C705E2D00760DF2 /* Keyboard.xib in Resources */,
+				36FC64741C724D2800096B4C /* arrow-200-512 copy.png in Resources */,
+				36FC64721C724CF800096B4C /* arrow-200-512.png in Resources */,
+				36B63DBE1C71A95000760DF2 /* geography-512.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		36B63D701C705BCA00760DF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36B63D7A1C705BCA00760DF2 /* ViewController.swift in Sources */,
+				36B63D781C705BCA00760DF2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36B63D841C705BCA00760DF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36B63D8D1C705BCA00760DF2 /* KeyBoardDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36B63D8F1C705BCA00760DF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36B63D981C705BCA00760DF2 /* KeyBoardDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36B63DA51C705D5500760DF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36B63DAC1C705D5500760DF2 /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		36B63D8A1C705BCA00760DF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 36B63D731C705BCA00760DF2 /* Bépo Keyboard */;
+			targetProxy = 36B63D891C705BCA00760DF2 /* PBXContainerItemProxy */;
+		};
+		36B63D951C705BCA00760DF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 36B63D731C705BCA00760DF2 /* Bépo Keyboard */;
+			targetProxy = 36B63D941C705BCA00760DF2 /* PBXContainerItemProxy */;
+		};
+		36B63DAF1C705D5500760DF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 36B63DA81C705D5500760DF2 /* Keyboard */;
+			targetProxy = 36B63DAE1C705D5500760DF2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		36B63D7B1C705BCA00760DF2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				36B63D7C1C705BCA00760DF2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		36B63D801C705BCA00760DF2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				36B63D811C705BCA00760DF2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		36B63D9A1C705BCA00760DF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		36B63D9B1C705BCA00760DF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		36B63D9D1C705BCA00760DF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = KeyBoardDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Dieppedalle.KeyBoardDemo;
+				PRODUCT_NAME = "Bépo Keyboard";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		36B63D9E1C705BCA00760DF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = KeyBoardDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Dieppedalle.KeyBoardDemo;
+				PRODUCT_NAME = "Bépo Keyboard";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		36B63DA01C705BCA00760DF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KeyBoardDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Dieppedalle.KeyBoardDemoTests;
+				PRODUCT_NAME = "Bépo Keyboard";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bépo Keyboard.app/Bépo Keyboard";
+			};
+			name = Debug;
+		};
+		36B63DA11C705BCA00760DF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KeyBoardDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Dieppedalle.KeyBoardDemoTests;
+				PRODUCT_NAME = "Bépo Keyboard";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bépo Keyboard.app/Bépo Keyboard";
+			};
+			name = Release;
+		};
+		36B63DA31C705BCA00760DF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = KeyBoardDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Dieppedalle.KeyBoardDemoUITests;
+				PRODUCT_NAME = "Bépo Keyboard";
+				TEST_TARGET_NAME = KeyBoardDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		36B63DA41C705BCA00760DF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = KeyBoardDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Dieppedalle.KeyBoardDemoUITests;
+				PRODUCT_NAME = "Bépo Keyboard";
+				TEST_TARGET_NAME = KeyBoardDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+		36B63DB21C705D5500760DF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Keyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Dieppedalle.KeyBoardDemo.Keyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		36B63DB31C705D5500760DF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Keyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Dieppedalle.KeyBoardDemo.Keyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		36B63D6F1C705BCA00760DF2 /* Build configuration list for PBXProject "Bépo Keyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36B63D9A1C705BCA00760DF2 /* Debug */,
+				36B63D9B1C705BCA00760DF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36B63D9C1C705BCA00760DF2 /* Build configuration list for PBXNativeTarget "Bépo Keyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36B63D9D1C705BCA00760DF2 /* Debug */,
+				36B63D9E1C705BCA00760DF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36B63D9F1C705BCA00760DF2 /* Build configuration list for PBXNativeTarget "Bépo KeyboardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36B63DA01C705BCA00760DF2 /* Debug */,
+				36B63DA11C705BCA00760DF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36B63DA21C705BCA00760DF2 /* Build configuration list for PBXNativeTarget "Bépo KeyboardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36B63DA31C705BCA00760DF2 /* Debug */,
+				36B63DA41C705BCA00760DF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36B63DB11C705D5500760DF2 /* Build configuration list for PBXNativeTarget "Keyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36B63DB21C705D5500760DF2 /* Debug */,
+				36B63DB31C705D5500760DF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 36B63D6C1C705BCA00760DF2 /* Project object */;
+}
