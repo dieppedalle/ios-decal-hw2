@@ -12,6 +12,7 @@ class KeyboardViewController: UIInputViewController {
 
     @IBOutlet var nextKeyboardButton: UIButton!
     @IBOutlet var B: UIButton!
+    @IBOutlet weak var backSpace: UIButton!
     @IBOutlet var É: UIButton!
     @IBOutlet var P: UIButton!
     @IBOutlet var O: UIButton!
@@ -47,7 +48,37 @@ class KeyboardViewController: UIInputViewController {
     
     var keyboardView: UIView!
     var shiftOn = 0
+    var capsLockOn = 0
     var numbersOn = 0
+    var justDoubleTapped = 0
+    
+    //======================
+    var timer: NSTimer!
+    var speedAmmo = 100
+    func buttonDown(sender: AnyObject) {
+        singleFire()
+        timer = NSTimer.scheduledTimerWithTimeInterval(0.3, target: self, selector: "rapidFire", userInfo: nil, repeats: true)
+    }
+    
+    func buttonUp(sender: AnyObject) {
+        timer.invalidate()
+    }
+    
+    func singleFire() {
+        (textDocumentProxy as UIKeyInput).deleteBackward()
+    }
+    
+    func rapidFire() {
+        if speedAmmo > 0 {
+            speedAmmo--
+            (textDocumentProxy as UIKeyInput).deleteBackward()
+        } else {
+            print("out of speed ammo, dude!")
+            timer.invalidate()
+        }
+    }
+
+    //======================
     
     override func updateViewConstraints() {
         super.updateViewConstraints()
@@ -57,8 +88,36 @@ class KeyboardViewController: UIInputViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         loadKeyboard()
+        
+        shift.addTarget(self, action: "didDoubleTap:", forControlEvents: .TouchDownRepeat)
+        
+        backSpace.addTarget(self, action: "buttonDown:", forControlEvents: .TouchDown)
+        backSpace.addTarget(self, action: "buttonUp:", forControlEvents: [.TouchUpInside, .TouchUpOutside])
+        
     }
+    
+    func didDoubleTap(sender: UIButton) {
+        //ignoreTap = true
+        print("didDoubleTap", sender)
+        
+        if (capsLockOn == 0){
+            shift.setTitle("⇪", forState: UIControlState.Normal)
+            shiftOn = 1
+            transformUpper()
+            capsLockOn = 1
+        }
+        else{
+            shift.setTitle("↑", forState: UIControlState.Normal)
+            shiftOn = 0
+            transformLower()
+            capsLockOn = 0
+        }
+        justDoubleTapped = 1
+    }
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -82,13 +141,21 @@ class KeyboardViewController: UIInputViewController {
         }
         else if (shiftOn==1){
             (textDocumentProxy as UIKeyInput).insertText("\(string!)".uppercaseString)
-            transformLower()
+            if (capsLockOn==0){
+                transformLower()
+            }
         }
         else{
             (textDocumentProxy as UIKeyInput).insertText("\(string!)".lowercaseString)
-            transformLower()
+            if (capsLockOn==0){
+                transformLower()
+            }
         }
-        shiftOn = 0
+        
+        if (capsLockOn==0){
+            shiftOn = 0
+        }
+        
         
     }
     
@@ -199,22 +266,25 @@ class KeyboardViewController: UIInputViewController {
     
     @IBAction func shiftPressed(button : UIButton)
     {
+        if justDoubleTapped == 0{
         if (shiftOn == 0){
             shiftOn = 1
             transformUpper()
         }
         else{
             shiftOn = 0
+            capsLockOn = 0
+            shift.setTitle("↑", forState: UIControlState.Normal)
             transformLower()
         }
-        
-        
+        }
+        justDoubleTapped = 0
         
     }
     
     @IBAction func backSpacePressed(button : UIButton)
     {
-        (textDocumentProxy as UIKeyInput).deleteBackward()
+        //(textDocumentProxy as UIKeyInput).deleteBackward()
     }
     
     @IBAction func spacePressed(button : UIButton)

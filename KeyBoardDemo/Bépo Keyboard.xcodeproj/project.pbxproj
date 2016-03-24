@@ -20,6 +20,7 @@
 		36B63DBA1C71A7F100760DF2 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 36B63DB91C71A7F100760DF2 /* arrow.png */; };
 		36B63DBC1C71A80F00760DF2 /* arrowBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 36B63DBB1C71A80F00760DF2 /* arrowBack.png */; };
 		36B63DBE1C71A95000760DF2 /* geography-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 36B63DBD1C71A95000760DF2 /* geography-512.png */; };
+		36C8B5C91CA27D0B007FE19D /* TutorialPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C8B5C81CA27D0B007FE19D /* TutorialPageViewController.swift */; };
 		36FC64721C724CF800096B4C /* arrow-200-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 36FC64711C724CF800096B4C /* arrow-200-512.png */; };
 		36FC64741C724D2800096B4C /* arrow-200-512 copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 36FC64731C724D2800096B4C /* arrow-200-512 copy.png */; };
 		36FC64761C724DAE00096B4C /* white-globe-hi.png in Resources */ = {isa = PBXBuildFile; fileRef = 36FC64751C724DAE00096B4C /* white-globe-hi.png */; };
@@ -84,6 +85,7 @@
 		36B63DB91C71A7F100760DF2 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = SOURCE_ROOT; };
 		36B63DBB1C71A80F00760DF2 /* arrowBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrowBack.png; sourceTree = SOURCE_ROOT; };
 		36B63DBD1C71A95000760DF2 /* geography-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "geography-512.png"; sourceTree = SOURCE_ROOT; };
+		36C8B5C81CA27D0B007FE19D /* TutorialPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialPageViewController.swift; sourceTree = "<group>"; };
 		36FC64711C724CF800096B4C /* arrow-200-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-200-512.png"; sourceTree = SOURCE_ROOT; };
 		36FC64731C724D2800096B4C /* arrow-200-512 copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-200-512 copy.png"; sourceTree = SOURCE_ROOT; };
 		36FC64751C724DAE00096B4C /* white-globe-hi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-globe-hi.png"; sourceTree = SOURCE_ROOT; };
@@ -149,6 +151,7 @@
 				36B63D771C705BCA00760DF2 /* AppDelegate.swift */,
 				36B63D7E1C705BCA00760DF2 /* Assets.xcassets */,
 				36B63D791C705BCA00760DF2 /* ViewController.swift */,
+				36C8B5C81CA27D0B007FE19D /* TutorialPageViewController.swift */,
 				36B63D7B1C705BCA00760DF2 /* Main.storyboard */,
 				36B63D801C705BCA00760DF2 /* LaunchScreen.storyboard */,
 				36B63D831C705BCA00760DF2 /* Info.plist */,
@@ -364,6 +367,7 @@
 			files = (
 				36B63D7A1C705BCA00760DF2 /* ViewController.swift in Sources */,
 				36B63D781C705BCA00760DF2 /* AppDelegate.swift in Sources */,
+				36C8B5C91CA27D0B007FE19D /* TutorialPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
