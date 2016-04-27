@@ -26,7 +26,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iPad_Air_2_H_SpcGr_sRGB-1" translatesAutoresizingMaskIntoConstraints="NO" id="oLr-Yr-dWW">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="iPad_Air_2_H_SpcGr_sRGB-1" translatesAutoresizingMaskIntoConstraints="NO" id="oLr-Yr-dWW">
                                 <rect key="frame" x="44" y="-258" width="512" height="1115"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to the Bépo Keyboard!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6X0-zO-bLK">
@@ -219,11 +219,11 @@
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qRK-CJ-3Jw">
                                         <rect key="frame" x="8" y="401" width="544" height="287"/>
-                                        <mutableString key="text">The BÉPO layout is an optimized French keyboard layout developed by the BÉPO community, supporting all Latin-based alphabets of the European Union, Greek and Esperanto. It is also designed to ease programming. It is based on ideas from the Dvorak and other ergonomic layouts. Typing with it is usually easier due to the high frequency keys being in the home row. If one wants to switch from another keyboard layout to BÉPO it is possible to use some typing tutors for easier transition, for example, TypingStudy and many more. [Source Wikipédia]
+                                        <string key="text">The BÉPO layout is an optimized French keyboard layout developed by the BÉPO community, supporting all Latin-based alphabets of the European Union, Greek and Esperanto. It is also designed to ease programming. It is based on ideas from the Dvorak and other ergonomic layouts. Typing with it is usually easier due to the high frequency keys being in the home row. If one wants to switch from another keyboard layout to BÉPO it is possible to use some typing tutors for easier transition, for example, TypingStudy and many more. [Source Wikipédia]
 
 The current keyboard layouts (QWERTY, AZERTY..) were created to prevent overlapping of letters when typing on mechanical typewriters. The organization of letters and symbols is the result of a statistical and ergonomic study which tends to reduce the movement of hands during touch typing.
 
-In the BÉPO keyboard layout, all the mostly used characters are on the home row and there is also a balance use of both hands. [Source ccm.net]</mutableString>
+In the BÉPO keyboard layout, all the mostly used characters are on the home row and there is also a balance use of both hands. [Source ccm.net]</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>

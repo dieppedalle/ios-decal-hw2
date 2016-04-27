@@ -85,15 +85,37 @@ class KeyboardViewController: UIInputViewController {
     
         // Add custom view sizing constraints here
     }
-
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        
-        
+        //B.backgroundColor = UIColor.blueColor()
+        // Shadow and Radius
+        //B.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).CGColor
+        //B.layer.shadowOffset = CGSizeMake(0.0, 2.0)
+        //B.layer.shadowOpacity = 1.0
+        //B.layer.shadowRadius = 0.0
+        //B.layer.masksToBounds = false
+        //B.layer.cornerRadius = 4.0
+        /*var keyboardButton = CYRKeyboardButton()
+        keyboardButton.translatesAutoresizingMaskIntoConstraints = false
+        keyboardButton.input = "A"
+        keyboardButton.inputOptions = ["A", "B", "C", "D"]
+        //keyboardButton.textInput = self.textView
+        self.view.addSubview(keyboardButton)*/
         
         loadKeyboard()
+        B.backgroundColor = UIColor(red: 171, green: 178, blue: 186, alpha: 1.0)
+        B.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).CGColor
+        B.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
+        B.layer.shadowOffset = CGSizeMake(0.0, 2.0)
+        B.layer.shadowOpacity = 1.0
+        B.layer.shadowRadius = 0.0
+        B.layer.masksToBounds = false
+        B.layer.cornerRadius = 4.0
+
         
         shift.addTarget(self, action: #selector(KeyboardViewController.didDoubleTap(_:)), forControlEvents: .TouchDownRepeat)
         
