@@ -22,6 +22,9 @@ class TutorialPageViewController: UIPageViewController {
                 animated: true,
                 completion: nil)
         }
+        
+        
+        
     }
     
     private(set) lazy var orderedViewControllers: [UIViewController] = {
@@ -38,7 +41,7 @@ class TutorialPageViewController: UIPageViewController {
     @IBAction func unwindForSegue(segue: UIStoryboardSegue) {
         print("unwindSecondView fired in first view")
     }
-        
+    
         
     
 }

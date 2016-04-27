@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07D4FE50E9625503A6230836 /* libPods-Keyboard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D95FA6A125B1BDD98F88C02C /* libPods-Keyboard.a */; };
+		36570B1D1CA8511500B41B1B /* ExplainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36570B1C1CA8511500B41B1B /* ExplainViewController.swift */; };
 		36B63D781C705BCA00760DF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B63D771C705BCA00760DF2 /* AppDelegate.swift */; };
 		36B63D7A1C705BCA00760DF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B63D791C705BCA00760DF2 /* ViewController.swift */; };
 		36B63D7D1C705BCA00760DF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36B63D7B1C705BCA00760DF2 /* Main.storyboard */; };
@@ -65,6 +67,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		36246EAC1CD0387700F3FD48 /* Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		36570B1C1CA8511500B41B1B /* ExplainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExplainViewController.swift; sourceTree = "<group>"; };
 		36B63D741C705BCA00760DF2 /* Bépo Keyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bépo Keyboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36B63D771C705BCA00760DF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36B63D791C705BCA00760DF2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +93,9 @@
 		36FC64711C724CF800096B4C /* arrow-200-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-200-512.png"; sourceTree = SOURCE_ROOT; };
 		36FC64731C724D2800096B4C /* arrow-200-512 copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-200-512 copy.png"; sourceTree = SOURCE_ROOT; };
 		36FC64751C724DAE00096B4C /* white-globe-hi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-globe-hi.png"; sourceTree = SOURCE_ROOT; };
+		821AFF854C34207A4E09278B /* Pods-Keyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keyboard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Keyboard/Pods-Keyboard.debug.xcconfig"; sourceTree = "<group>"; };
+		B74C7209117E702F50583CC2 /* Pods-Keyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keyboard.release.xcconfig"; path = "Pods/Target Support Files/Pods-Keyboard/Pods-Keyboard.release.xcconfig"; sourceTree = "<group>"; };
+		D95FA6A125B1BDD98F88C02C /* libPods-Keyboard.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Keyboard.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07D4FE50E9625503A6230836 /* libPods-Keyboard.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +139,8 @@
 				36B63D961C705BCA00760DF2 /* KeyBoardDemoUITests */,
 				36B63DAA1C705D5500760DF2 /* Keyboard */,
 				36B63D751C705BCA00760DF2 /* Products */,
+				9BB904FD5E3089578CCAA023 /* Pods */,
+				68B04B501633F2CEA5B0E439 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -152,6 +162,7 @@
 				36B63D7E1C705BCA00760DF2 /* Assets.xcassets */,
 				36B63D791C705BCA00760DF2 /* ViewController.swift */,
 				36B63D7B1C705BCA00760DF2 /* Main.storyboard */,
+				36570B1C1CA8511500B41B1B /* ExplainViewController.swift */,
 				36B63D801C705BCA00760DF2 /* LaunchScreen.storyboard */,
 				36B63D831C705BCA00760DF2 /* Info.plist */,
 				36C8B5CA1CA27D9C007FE19D /* TutorialPageViewController.swift */,
@@ -189,8 +200,26 @@
 				36FC64711C724CF800096B4C /* arrow-200-512.png */,
 				36FC64751C724DAE00096B4C /* white-globe-hi.png */,
 				36B63DB51C705E2D00760DF2 /* Keyboard.xib */,
+				36246EAC1CD0387700F3FD48 /* Example-Bridging-Header.h */,
 			);
 			path = Keyboard;
+			sourceTree = "<group>";
+		};
+		68B04B501633F2CEA5B0E439 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D95FA6A125B1BDD98F88C02C /* libPods-Keyboard.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9BB904FD5E3089578CCAA023 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				821AFF854C34207A4E09278B /* Pods-Keyboard.debug.xcconfig */,
+				B74C7209117E702F50583CC2 /* Pods-Keyboard.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,9 +284,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 36B63DB11C705D5500760DF2 /* Build configuration list for PBXNativeTarget "Keyboard" */;
 			buildPhases = (
+				D48468B43CF226849715854E /* Check Pods Manifest.lock */,
 				36B63DA51C705D5500760DF2 /* Sources */,
 				36B63DA61C705D5500760DF2 /* Frameworks */,
 				36B63DA71C705D5500760DF2 /* Resources */,
+				E14A0F7E2AC9B318CDBDE59C /* Embed Pods Frameworks */,
+				4B8F05AC16178ACB6F73F6E0 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -280,7 +312,7 @@
 				TargetAttributes = {
 					36B63D731C705BCA00760DF2 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = 67QJZLANJR;
+						DevelopmentTeam = C933SUF3G5;
 					};
 					36B63D871C705BCA00760DF2 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -294,7 +326,7 @@
 					};
 					36B63DA81C705D5500760DF2 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = 67QJZLANJR;
+						DevelopmentTeam = C933SUF3G5;
 					};
 				};
 			};
@@ -360,6 +392,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4B8F05AC16178ACB6F73F6E0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Keyboard/Pods-Keyboard-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D48468B43CF226849715854E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E14A0F7E2AC9B318CDBDE59C /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Keyboard/Pods-Keyboard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		36B63D701C705BCA00760DF2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -367,6 +447,7 @@
 			files = (
 				36B63D7A1C705BCA00760DF2 /* ViewController.swift in Sources */,
 				36B63D781C705BCA00760DF2 /* AppDelegate.swift in Sources */,
+				36570B1D1CA8511500B41B1B /* ExplainViewController.swift in Sources */,
 				36C8B5CB1CA27D9C007FE19D /* TutorialPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -520,11 +601,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = KeyBoardDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Dieppedalle.KeyBoardDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dieppedalle.bepo;
 				PRODUCT_NAME = "Bépo Keyboard";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Example-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -533,11 +619,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = KeyBoardDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Dieppedalle.KeyBoardDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dieppedalle.bepo;
 				PRODUCT_NAME = "Bépo Keyboard";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Example-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -592,10 +683,12 @@
 		};
 		36B63DB21C705D5500760DF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 821AFF854C34207A4E09278B /* Pods-Keyboard.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Keyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Dieppedalle.KeyBoardDemo.Keyboard;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dieppedalle.bepo.Keyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -603,10 +696,12 @@
 		};
 		36B63DB31C705D5500760DF2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B74C7209117E702F50583CC2 /* Pods-Keyboard.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Keyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Dieppedalle.KeyBoardDemo.Keyboard;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dieppedalle.bepo.Keyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};

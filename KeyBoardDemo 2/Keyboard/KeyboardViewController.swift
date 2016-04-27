@@ -57,7 +57,7 @@ class KeyboardViewController: UIInputViewController {
     var speedAmmo = 100
     func buttonDown(sender: AnyObject) {
         singleFire()
-        timer = NSTimer.scheduledTimerWithTimeInterval(0.3, target: self, selector: "rapidFire", userInfo: nil, repeats: true)
+        timer = NSTimer.scheduledTimerWithTimeInterval(0.3, target: self, selector: #selector(KeyboardViewController.rapidFire), userInfo: nil, repeats: true)
     }
     
     func buttonUp(sender: AnyObject) {
@@ -70,7 +70,7 @@ class KeyboardViewController: UIInputViewController {
     
     func rapidFire() {
         if speedAmmo > 0 {
-            speedAmmo--
+            speedAmmo -= 1
             (textDocumentProxy as UIKeyInput).deleteBackward()
         } else {
             print("out of speed ammo, dude!")
@@ -89,12 +89,16 @@ class KeyboardViewController: UIInputViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
+        
+        
         loadKeyboard()
         
-        shift.addTarget(self, action: "didDoubleTap:", forControlEvents: .TouchDownRepeat)
+        shift.addTarget(self, action: #selector(KeyboardViewController.didDoubleTap(_:)), forControlEvents: .TouchDownRepeat)
         
-        backSpace.addTarget(self, action: "buttonDown:", forControlEvents: .TouchDown)
-        backSpace.addTarget(self, action: "buttonUp:", forControlEvents: [.TouchUpInside, .TouchUpOutside])
+        backSpace.addTarget(self, action: #selector(KeyboardViewController.buttonDown(_:)), forControlEvents: .TouchDown)
+        backSpace.addTarget(self, action: #selector(KeyboardViewController.buttonUp(_:)), forControlEvents: [.TouchUpInside, .TouchUpOutside])
         
     }
     
@@ -339,7 +343,7 @@ class KeyboardViewController: UIInputViewController {
         keyboardView.frame = view.frame
         //shift.setTitle("", forState: UIControlState.Normal)
         
-        nextKeyboardButton.addTarget(self, action: "advanceToNextInputMode", forControlEvents: .TouchUpInside)
+        nextKeyboardButton.addTarget(self, action: #selector(UIInputViewController.advanceToNextInputMode), forControlEvents: .TouchUpInside)
     }
     
 }

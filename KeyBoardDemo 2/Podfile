@@ -1,0 +1,21 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '8.0'
+# Uncomment this line if you're using Swift
+# use_frameworks!
+
+target 'Bépo Keyboard' do
+
+end
+
+target 'Bépo KeyboardTests' do
+
+end
+
+target 'Bépo KeyboardUITests' do
+
+end
+
+target 'Keyboard' do
+  pod 'CYRKeyboardButton', '~> 0.5'
+end
+
