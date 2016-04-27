@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36246EC41CD0709100F3FD48 /* CYRKeyboardButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 36246EC11CD0709100F3FD48 /* CYRKeyboardButton.m */; };
+		36246EC51CD0709100F3FD48 /* CYRKeyboardButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36246EC31CD0709100F3FD48 /* CYRKeyboardButtonView.m */; };
+		36246EC81CD070EA00F3FD48 /* TurtleBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 36246EC71CD070EA00F3FD48 /* TurtleBezierPath.m */; };
 		36570B1D1CA8511500B41B1B /* ExplainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36570B1C1CA8511500B41B1B /* ExplainViewController.swift */; };
 		36B63D781C705BCA00760DF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B63D771C705BCA00760DF2 /* AppDelegate.swift */; };
 		36B63D7A1C705BCA00760DF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B63D791C705BCA00760DF2 /* ViewController.swift */; };
@@ -66,6 +69,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		36246EBF1CD0709000F3FD48 /* Keyboard-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Keyboard-Bridging-Header.h"; sourceTree = "<group>"; };
+		36246EC01CD0709100F3FD48 /* CYRKeyboardButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYRKeyboardButton.h; sourceTree = "<group>"; };
+		36246EC11CD0709100F3FD48 /* CYRKeyboardButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYRKeyboardButton.m; sourceTree = "<group>"; };
+		36246EC21CD0709100F3FD48 /* CYRKeyboardButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYRKeyboardButtonView.h; sourceTree = "<group>"; };
+		36246EC31CD0709100F3FD48 /* CYRKeyboardButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYRKeyboardButtonView.m; sourceTree = "<group>"; };
+		36246EC61CD070EA00F3FD48 /* TurtleBezierPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TurtleBezierPath.h; sourceTree = "<group>"; };
+		36246EC71CD070EA00F3FD48 /* TurtleBezierPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TurtleBezierPath.m; sourceTree = "<group>"; };
 		36570B1C1CA8511500B41B1B /* ExplainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExplainViewController.swift; sourceTree = "<group>"; };
 		36B63D741C705BCA00760DF2 /* Bépo Keyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bépo Keyboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36B63D771C705BCA00760DF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -185,6 +195,12 @@
 			children = (
 				36B63DBD1C71A95000760DF2 /* geography-512.png */,
 				36B63DAB1C705D5500760DF2 /* KeyboardViewController.swift */,
+				36246EC01CD0709100F3FD48 /* CYRKeyboardButton.h */,
+				36246EC11CD0709100F3FD48 /* CYRKeyboardButton.m */,
+				36246EC21CD0709100F3FD48 /* CYRKeyboardButtonView.h */,
+				36246EC61CD070EA00F3FD48 /* TurtleBezierPath.h */,
+				36246EC71CD070EA00F3FD48 /* TurtleBezierPath.m */,
+				36246EC31CD0709100F3FD48 /* CYRKeyboardButtonView.m */,
 				36B63DB91C71A7F100760DF2 /* arrow.png */,
 				36B63DBB1C71A80F00760DF2 /* arrowBack.png */,
 				36FC64731C724D2800096B4C /* arrow-200-512 copy.png */,
@@ -192,6 +208,7 @@
 				36FC64711C724CF800096B4C /* arrow-200-512.png */,
 				36FC64751C724DAE00096B4C /* white-globe-hi.png */,
 				36B63DB51C705E2D00760DF2 /* Keyboard.xib */,
+				36246EBF1CD0709000F3FD48 /* Keyboard-Bridging-Header.h */,
 			);
 			path = Keyboard;
 			sourceTree = "<group>";
@@ -395,7 +412,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36246EC51CD0709100F3FD48 /* CYRKeyboardButtonView.m in Sources */,
 				36B63DAC1C705D5500760DF2 /* KeyboardViewController.swift in Sources */,
+				36246EC41CD0709100F3FD48 /* CYRKeyboardButton.m in Sources */,
+				36246EC81CD070EA00F3FD48 /* TurtleBezierPath.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -609,12 +629,13 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = TARGET_IS_EXTENSION;
 				INFOPLIST_FILE = Keyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dieppedalle.bepo.Keyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Keyboard/Keyboard-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -624,12 +645,13 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = TARGET_IS_EXTENSION;
 				INFOPLIST_FILE = Keyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dieppedalle.bepo.Keyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Keyboard/Keyboard-Bridging-Header.h";
 			};
 			name = Release;
 		};

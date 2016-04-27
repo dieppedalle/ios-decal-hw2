@@ -11,28 +11,7 @@ import UIKit
 class KeyboardViewController: UIInputViewController {
 
     @IBOutlet var nextKeyboardButton: UIButton!
-    @IBOutlet var B: UIButton!
     @IBOutlet weak var backSpace: UIButton!
-    @IBOutlet var É: UIButton!
-    @IBOutlet var P: UIButton!
-    @IBOutlet var O: UIButton!
-    @IBOutlet var È: UIButton!
-    @IBOutlet var V: UIButton!
-    @IBOutlet var D: UIButton!
-    @IBOutlet var L: UIButton!
-    @IBOutlet var J: UIButton!
-    @IBOutlet var Z: UIButton!
-    @IBOutlet var A: UIButton!
-    @IBOutlet var U: UIButton!
-    @IBOutlet var I: UIButton!
-    @IBOutlet var E: UIButton!
-    @IBOutlet var C: UIButton!
-    @IBOutlet var T: UIButton!
-    @IBOutlet var S: UIButton!
-    @IBOutlet var R: UIButton!
-    @IBOutlet var N: UIButton!
-    @IBOutlet var M: UIButton!
-    @IBOutlet var Ç: UIButton!
     @IBOutlet var Ê: UIButton!
     @IBOutlet var À: UIButton!
     @IBOutlet var Y: UIButton!
@@ -41,10 +20,54 @@ class KeyboardViewController: UIInputViewController {
     @IBOutlet var Q: UIButton!
     @IBOutlet var G: UIButton!
     @IBOutlet var H: UIButton!
-    @IBOutlet var W: UIButton!
     @IBOutlet var F: UIButton!
-    @IBOutlet var shift: UIButton!
     @IBOutlet var mode: UIButton!
+    
+    @IBOutlet weak var B: CYRKeyboardButton!
+    
+    @IBOutlet weak var É: CYRKeyboardButton!
+    
+    @IBOutlet weak var P: CYRKeyboardButton!
+    
+    @IBOutlet weak var O: CYRKeyboardButton!
+    
+    @IBOutlet weak var W: CYRKeyboardButton!
+    
+    @IBOutlet weak var V: CYRKeyboardButton!
+    
+    @IBOutlet weak var D: CYRKeyboardButton!
+    
+    
+    @IBOutlet weak var L: CYRKeyboardButton!
+    
+    @IBOutlet weak var J: CYRKeyboardButton!
+    
+    @IBOutlet weak var Z: CYRKeyboardButton!
+    
+    
+    @IBOutlet weak var A: CYRKeyboardButton!
+    
+    
+    @IBOutlet weak var U: CYRKeyboardButton!
+    
+    @IBOutlet weak var I: CYRKeyboardButton!
+    
+    @IBOutlet weak var E: CYRKeyboardButton!
+    
+    @IBOutlet weak var C: CYRKeyboardButton!
+    
+    @IBOutlet weak var T: CYRKeyboardButton!
+    
+    @IBOutlet weak var S: CYRKeyboardButton!
+    
+    @IBOutlet weak var R: CYRKeyboardButton!
+    
+    @IBOutlet weak var N: CYRKeyboardButton!
+    
+    @IBOutlet weak var M: CYRKeyboardButton!
+    
+    
+    
     
     var keyboardView: UIView!
     var shiftOn = 0
@@ -91,36 +114,76 @@ class KeyboardViewController: UIInputViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //B.backgroundColor = UIColor.blueColor()
-        // Shadow and Radius
-        //B.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).CGColor
-        //B.layer.shadowOffset = CGSizeMake(0.0, 2.0)
-        //B.layer.shadowOpacity = 1.0
-        //B.layer.shadowRadius = 0.0
-        //B.layer.masksToBounds = false
-        //B.layer.cornerRadius = 4.0
-        /*var keyboardButton = CYRKeyboardButton()
-        keyboardButton.translatesAutoresizingMaskIntoConstraints = false
-        keyboardButton.input = "A"
-        keyboardButton.inputOptions = ["A", "B", "C", "D"]
-        //keyboardButton.textInput = self.textView
-        self.view.addSubview(keyboardButton)*/
         
         loadKeyboard()
-        B.backgroundColor = UIColor(red: 171, green: 178, blue: 186, alpha: 1.0)
+        /*B.backgroundColor = UIColor(red: 171, green: 178, blue: 186, alpha: 1.0)
         B.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).CGColor
         B.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
         B.layer.shadowOffset = CGSizeMake(0.0, 2.0)
         B.layer.shadowOpacity = 1.0
         B.layer.shadowRadius = 0.0
         B.layer.masksToBounds = false
-        B.layer.cornerRadius = 4.0
+        B.layer.cornerRadius = 4.0*/
 
         
         shift.addTarget(self, action: #selector(KeyboardViewController.didDoubleTap(_:)), forControlEvents: .TouchDownRepeat)
         
         backSpace.addTarget(self, action: #selector(KeyboardViewController.buttonDown(_:)), forControlEvents: .TouchDown)
         backSpace.addTarget(self, action: #selector(KeyboardViewController.buttonUp(_:)), forControlEvents: [.TouchUpInside, .TouchUpOutside])
+        
+        //var keyboardButton = CYRKeyboardButton()
+        test.translatesAutoresizingMaskIntoConstraints = false
+        test.input = "E"
+        test.inputOptions = ["É", "È", "Ê", "E"]
+        //keyboardButton.textInput = self.textView
+        //view.addSubview(keyboardButton)
+        //===================
+        //     Make a view
+        /*let view1 = UIView()
+        view1.translatesAutoresizingMaskIntoConstraints = false
+        view1.backgroundColor = UIColor.redColor()
+        
+        //Make a second view
+        let view2 = UIView()
+        view2.translatesAutoresizingMaskIntoConstraints = false
+        view2.backgroundColor = UIColor(
+            red: 0.75,
+            green: 0.75,
+            blue: 0.1,
+            alpha: 1.0)
+        view.addSubview(view1)
+        view.addSubview(view2)
+        
+        var keyboardButton = CYRKeyboardButton()
+        keyboardButton.translatesAutoresizingMaskIntoConstraints = false
+        keyboardButton.input = "A"
+        keyboardButton.inputOptions = ["A", "B", "C", "D"]
+        //keyboardButton.textInput = self.textView
+        view.addSubview(keyboardButton)
+        
+        //--------------- constraints
+        
+        //make dictionary for views
+        let viewsDictionary = [
+            "view1":view1,
+            "view2":view2]
+        
+        //sizing constraints
+        //view1
+        let view1_constraint_H = NSLayoutConstraint.constraintsWithVisualFormat(
+            "H:[view1(50)]",
+            options: NSLayoutFormatOptions(rawValue: 0),
+            metrics: nil, views: viewsDictionary)
+        let view1_constraint_V = NSLayoutConstraint.constraintsWithVisualFormat(
+            "V:[view1(50)]",
+            options: NSLayoutFormatOptions(rawValue:0),
+            metrics: nil, views: viewsDictionary)
+        
+        view1.addConstraints(view1_constraint_H)
+        view1.addConstraints(view1_constraint_V)*/
+        
+        //self.view.addSubview(<#T##view: UIView##UIView#>)
+        //===================
         
     }
     
