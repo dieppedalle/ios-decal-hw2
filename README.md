@@ -1,3 +1,5 @@
+#Please Look at the KeyBoardDemo Folder
+
 # Homework 2: Custom Keyboard
 
 ## Due
